@@ -1,7 +1,14 @@
 package com.ninja_squad.geektic.service;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="GEEK")
 public class Geek {
-	
+	@Id
 	private int id;
 	private String nom;
 	private String prenom;
@@ -9,43 +16,54 @@ public class Geek {
 	private String mail;
 	private String interets;
 	
-	private int getId() {
+	public int getId() {
 		return id;
 	}
-	private void setId(int id) {
+
+	public void setId(int id) {
 		this.id = id;
 	}
-	private String getNom() {
+
+	public String getNom() {
 		return nom;
 	}
-	private void setNom(String nom) {
+
+	public void setNom(String nom) {
 		this.nom = nom;
 	}
-	private String getPrenom() {
+
+	public String getPrenom() {
 		return prenom;
 	}
-	private void setPrenom(String prenom) {
+
+	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-	private String getSexe() {
+
+	public String getSexe() {
 		return sexe;
 	}
-	private void setSexe(String sexe) {
+
+	public void setSexe(String sexe) {
 		this.sexe = sexe;
 	}
-	private String getMail() {
+
+	public String getMail() {
 		return mail;
 	}
-	private void setMail(String mail) {
+
+	public void setMail(String mail) {
 		this.mail = mail;
 	}
-	private String getInterets() {
+
+	public String getInterets() {
 		return interets;
 	}
-	private void setInterets(String interets) {
+
+	public void setInterets(String interets) {
 		this.interets = interets;
 	}
-	
+
 	public Geek(int id, String nom, String prenom, String sexe, String mail, String interets)
 	{
 		this.id = id;
@@ -54,6 +72,10 @@ public class Geek {
 		this.sexe = sexe;
 		this.mail = mail;
 		this.interets = interets;
+	}
+	
+	public Geek()
+	{
 	}
 
 }
