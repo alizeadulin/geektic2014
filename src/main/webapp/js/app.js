@@ -1,10 +1,14 @@
 var app = angular.module("geektic", ['ngRoute']);
 
-app.controller('HelloCtrl', function($scope, $http) {
-    $http.get('/api/geek').success(function(getListGeek) {
-        $scope.helloMessage = helloMessage;
-    });
-});
+app.config(function($routeProvider){
+	$routeProvider.when("/", {
+		controller: 'MainCtrl',
+		templateUrl: 'formulaireRecherche.html'
+	}).when("/geek", {
+		controller: 'SrcCtrl',
+		templateUrl: 'resultatRecherche.html'
+	})
+	})
 
 app.controller('MainCtrl', function($scope, $http) {
 	  $scope.users = [{name:'Aliz'},{name:'Alex'}];

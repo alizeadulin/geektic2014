@@ -2,23 +2,26 @@
 
 <html ng-app="geektic">
 <head>
-<link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/css/geekcss.css" />
 <title>Geektic</title>
 </head>
-<body ng-controller="HelloCtrl">
-
+<body ng-controller="MainCtrl">
+<div class="conteneur">
 	<div align="center">
 		<h1>Bienvenue sur GEEKTIC ! ^^'</h1>
 	</div>
 
 	<div align="center">
-		<h2>Voici la liste de tous les geeks de notre site :D</h2>
+		<h3>Geektic, par amour du geek :D</h3>
 	</div>
 
-	<div align="center">
-		<h3>{{ helloMessage.message }}</h3>
-	</div>
+	<div ng-view><div>
 
+
+<!-- 	<div align="center"> -->
+<!-- 		<h3>{{ helloMessage.message }}</h3> -->
+<!-- 	</div> -->
+</div>
 <!-- 	<div align="center"> -->
 <!-- 		<div ng-repeat="user in users">{{ user.name }}</div> -->
 <!-- 	</div> -->
