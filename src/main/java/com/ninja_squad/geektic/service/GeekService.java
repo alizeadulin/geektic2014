@@ -13,8 +13,8 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
  */
 @RestController
 @Transactional
-@RequestMapping("/api/hello")
-public class HelloService {
+@RequestMapping("/api/geek")
+public class GeekService {
 
     @RequestMapping(method = GET)
     public HelloMessage sayHello() {
