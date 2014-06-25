@@ -16,17 +16,17 @@ public class Dao {
 	@PersistenceContext
 	private EntityManager entityManager;
 
-	public List<Geek> getAllUsers() {
-		String cmd = "Select u from Geek as u";
+	public Geek getUserByID(int id) {
+		String cmd = "Select u from Geek as u where u.id = " + id;
 		TypedQuery<Geek> req = entityManager.createQuery(cmd, Geek.class);
-		List<Geek> listUsers = req.getResultList();
+		Geek user = req.getSingleResult();
 
-		return listUsers;
+		return user;
 	}
 
 	public List<Geek> getSelectedUsers(String sexe, String critere) {
 		String cmd = "Select u from Geek as u where u.sexe like '" + sexe + "' and u.interets like '%"
-				+ critere + "%'";
+				+ critere.toLowerCase() + "%'";
 		TypedQuery<Geek> req = entityManager.createQuery(cmd, Geek.class);
 		return req.getResultList();
 	}
