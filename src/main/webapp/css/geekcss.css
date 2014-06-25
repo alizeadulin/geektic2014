@@ -4,5 +4,29 @@ body{
 }
 
 .conteneur{
+	margin:50px;
+	margin-top:30px;
+	text-align:center;
+	font-family:fantasy;
+	font-size:20;
+	color:#696969;
 }
 
+
+.recherche{
+	position:absolute;
+	top:370px;
+	left:500px;
+}
+
+a{
+	font-family:fantasy;
+	font-size:20;
+	color:#696969;
+}
+
+a:hover{
+	font-family:fantasy;
+	font-size:20;
+	color:red;
+}
