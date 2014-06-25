@@ -12,6 +12,19 @@ body{
 	color:#696969;
 }
 
+.conteneur a
+{
+	font-family:fantasy;
+	font-size:20;
+	color:#696969;
+}
+
+
+.conteneur a:hover{
+	font-family:fantasy;
+	font-size:20;
+	color:#D32606;
+}
 
 .recherche{
 	position:absolute;
@@ -19,14 +32,39 @@ body{
 	left:500px;
 }
 
-a{
+.recherche a
+{
 	font-family:fantasy;
-	font-size:20;
 	color:#696969;
+	text-decoration:none;
 }
 
-a:hover{
+
+.recherche a:hover{
 	font-family:fantasy;
-	font-size:20;
-	color:red;
+	color:blue;
+}
+
+.recherche h2
+{
+	font-family:fantasy;
+	font-size:20px;
+	color:#696969;
+	text-decoration:none;
+}
+
+.prenom{
+	color:#144EC7;
+}
+
+.nom{
+	color:#D32606;
+}
+
+.mail{
+	color:#F0B80B;
+}
+
+.interets{
+	color:#19A220;
 }

@@ -17,12 +17,8 @@ public class Dao {
 	private EntityManager entityManager;
 
 	public Geek getUserByID(int id) {
-		String cmd = "Select u from Geek as u where u.id = " + id;
-		TypedQuery<Geek> req = entityManager.createQuery(cmd, Geek.class);
-		Geek user = req.getSingleResult();
-
-		return user;
-	}
+		return entityManager.find(Geek.class, id);
+		}
 
 	public List<Geek> getSelectedUsers(String sexe, String critere) {
 		String cmd = "Select u from Geek as u where u.sexe like '" + sexe + "' and u.interets like '%"

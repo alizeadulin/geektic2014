@@ -1,9 +1,11 @@
 <div class="recherche">
-Voici les geeks qui te correspondent : <br>
+<h2>Voici les geeks qui te correspondent : </h2><br>
 	<div ng-repeat="geek in geeks">
 	<hr>
-	nickname : {{ geek.prenom }}<br>
-	name : {{ geek.nom }}<br>
-	mail : {{ geek.mail }}<br>
-	Interests : {{ geek.interets }}</div>
+	<div class="prenom">nickname : {{ geek.prenom }}</div><br>
+	<div class="nom">name : {{ geek.nom }}</div><br>
+	<div class="mail">mail : {{ geek.mail }}</div><br>
+	<div class="interets">Interests : {{ geek.interets }}</div><br>
+	<a href="#/geek/{{ geek.id }}">O_o XP View profile... ;) XD </a>
+	</div>
 </div>

@@ -24,6 +24,11 @@ public class GeekService {
 	@Autowired
 	private Dao getAccess;
 	
+	 @RequestMapping(method = RequestMethod.GET, value = "/{id}")
+	    public Geek getGeekByID(@PathVariable ("id") int id) {
+	    	
+	        return getAccess.getUserByID(id);
+	    }
     
     @RequestMapping(method = RequestMethod.GET, value = "/{sexe}/{interets}")
     public List<Geek> getListSelectedGeek(@PathVariable ("sexe") String sexe, @PathVariable ("interets") String interets) {
