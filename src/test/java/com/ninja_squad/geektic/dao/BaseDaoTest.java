@@ -17,7 +17,7 @@ import javax.sql.DataSource;
  * Base class for DAO tests. To implement DAO tests, simply extend this class,
  * populate the database using a DbSetup (using the destination field) in a method annotated with @Before, and then
  * use the em
- * @author JB
+ * @author AA
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = DaoTestConfig.class)

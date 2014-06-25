@@ -17,7 +17,7 @@ import javax.sql.DataSource;
 
 /**
  * Spring configuration used for DAO tests
- * @author JB
+ * @author AA
  */
 @Configuration
 @EnableTransactionManagement(proxyTargetClass = true)
