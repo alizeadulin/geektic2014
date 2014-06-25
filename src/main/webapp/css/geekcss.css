@@ -54,17 +54,21 @@ body{
 }
 
 .prenom{
+	font-size:20px;
 	color:#144EC7;
 }
 
 .nom{
+	font-size:20px;
 	color:#D32606;
 }
 
 .mail{
+	font-size:20px;
 	color:#F0B80B;
 }
 
 .interets{
+	font-size:20px;
 	color:#19A220;
 }
